@@ -12,6 +12,7 @@ namespace Encapsulation
             var persons = new List<Person>();
             for (int i = 0; i < lines; i++)
             {
+                // added instructions to the user.
                 Console.WriteLine("Type a first name, last name and age: ");
                 var commandLineArguments = Console.ReadLine().Split();
                 var person = new Person(commandLineArguments[0], commandLineArguments[1], int.Parse(commandLineArguments[2]));
